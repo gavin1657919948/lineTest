@@ -2,7 +2,7 @@ const fileCache = require('think-cache-file');
 const nunjucks = require('think-view-nunjucks');
 const fileSession = require('think-session-file');
 const mysql = require('think-model-mysql');
-const {Console, File, DateFile} = require('think-logger3');
+const { Console, File, DateFile } = require('think-logger3');
 const path = require('path');
 const isDev = think.env === 'development';
 
@@ -36,13 +36,14 @@ exports.model = {
   },
   mysql: {
     handle: mysql,
-    database: '',
-    prefix: 'think_',
+    database: 'gurume_new',
+    prefix: 't_',
     encoding: 'utf8',
-    host: '127.0.0.1',
-    port: '',
-    user: 'root',
-    password: 'root',
+    charset: 'utf8mb4',
+    host: '180.76.235.184',
+    port: '3306',
+    user: 'cheercare',
+    password: 'zkqk666888',
     dateStrings: true
   }
 };
