@@ -5,6 +5,7 @@ const _ = require("lodash");
 
 module.exports = class extends Base {
   indexAction() {
+    console.log(this.get())
     return this.display();
   }
   /* 请求line获取测试支付url */
